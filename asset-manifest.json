@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/onboarding/static/css/main.0629be8f.css",
+    "main.js": "/onboarding/static/js/main.01948bbc.js",
+    "static/media/group.png": "/onboarding/static/media/group.e5cb3c5eb890b0f37932.png",
+    "static/media/success.png": "/onboarding/static/media/success.531c6ac79759fe61b914.png",
+    "index.html": "/onboarding/index.html",
+    "main.0629be8f.css.map": "/onboarding/static/css/main.0629be8f.css.map",
+    "main.01948bbc.js.map": "/onboarding/static/js/main.01948bbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0629be8f.css",
+    "static/js/main.01948bbc.js"
+  ]
+}
