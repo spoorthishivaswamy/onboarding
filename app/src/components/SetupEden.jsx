@@ -1,6 +1,5 @@
 import { Head } from "./Head";
-import { SubmitButton } from "./SubmitButton"
-import { Form, Input, Select } from 'antd'
+import { Form, Input, Select, Button } from 'antd'
 
 const { Option } = Select;
 
@@ -12,18 +11,24 @@ const prefixSelector = (
     </Form.Item>
 );
 
-export const SetupEden = props => (
-    <div className="parent">
-        <Head title="Eden" currentStep={2} heading="Welcome! First things first..." subHeading="You can always change them later." />
-        <Form
-            layout="vertical"
-        > <Form.Item label="Full Name">
-                <Input placeholder="Eden" />
-            </Form.Item>
-            <Form.Item label="Full Name" >
-                <Input addonBefore={prefixSelector} />
-            </Form.Item>
-        </Form>
-        <SubmitButton content="Create Workspace"></SubmitButton>
-    </div>
-)
+export const SetupEden = props => {
+    const handleClick = (event) => {
+        console.log(props.parentCallback(3))
+
+    }
+    return (
+        <div className="parent">
+            <Head title="Eden" currentStep={2} heading="Let's set up a home for all your work" subHeading="You can always create another workspace later." />
+            <Form
+                layout="vertical"
+            > <Form.Item label="Full Name">
+                    <Input placeholder="Eden" />
+                </Form.Item>
+                <Form.Item label="Full Name" >
+                    <Input addonBefore={prefixSelector} />
+                </Form.Item>
+            </Form>
+            <Button block onClick={handleClick}>Create Workspace</Button>
+        </div>
+    )
+}

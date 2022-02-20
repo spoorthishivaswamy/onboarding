@@ -1,10 +1,13 @@
 import { Head } from "./Head";
-import { SubmitButton } from "./SubmitButton"
-import { Form, Input } from 'antd'
+import { Form, Input,Button } from 'antd'
 
 
-export const WelcomeEden = props => (
-    <div className="parent">
+export const WelcomeEden = props => {
+   const handleClick = (event) => {
+        console.log(props.parentCallback(2))
+
+    }
+    return (<div className="parent">
         <Head title="Eden" currentStep={1} heading="Welcome! First things first..." subHeading="You can always change them later." />
         <Form
             layout="vertical"
@@ -16,6 +19,6 @@ export const WelcomeEden = props => (
             >
                 <Input placeholder="Steve" />
             </Form.Item></Form>
-        <SubmitButton  content="Create Workspace"/>
-    </div>
-)
+            <Button block onClick={handleClick}>Create Workspace</Button>
+    </div>)
+}

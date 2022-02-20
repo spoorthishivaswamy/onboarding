@@ -12,7 +12,7 @@ const getClassName = currentStep => (
 
 export const Head = props => (
     <>
-        <div style={{ display: "flex", justifyContent: "center" }}><img width={34} height={34} src={logo}/> <Title className="how-eden-title" level={3}>{props.title}</Title></div>
+        <div style={{ display: "flex", justifyContent: "center" }}><img width={34} height={34} src={logo} alt=""/> <Title className="how-eden-title" level={3}>{props.title}</Title></div>
         <Steps current={props.currentStep}>
             <Step icon={1} />
             <Step icon={2} />
