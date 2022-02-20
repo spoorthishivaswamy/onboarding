@@ -13,8 +13,7 @@ const prefixSelector = (
 
 export const SetupEden = props => {
     const handleClick = (event) => {
-        console.log(props.parentCallback(3))
-
+        props.parentCallback(3)
     }
     return (
         <div className="parent">

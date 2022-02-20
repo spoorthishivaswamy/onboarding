@@ -4,8 +4,7 @@ import { Form, Input,Button } from 'antd'
 
 export const WelcomeEden = props => {
    const handleClick = (event) => {
-        console.log(props.parentCallback(2))
-
+       props.parentCallback(2)
     }
     return (<div className="parent">
         <Head title="Eden" currentStep={1} heading="Welcome! First things first..." subHeading="You can always change them later." />

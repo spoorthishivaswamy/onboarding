@@ -11,7 +11,7 @@ class App extends Component {
         component: 1
     }
     handleCallback = (childData) => {
-        console.log("handleCall");
+
         this.setState({
             component: childData
         })

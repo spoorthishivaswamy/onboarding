@@ -8,7 +8,7 @@ const { Meta } = Card;
 
 export const HowEden = props => {
     const handleClick = (event) => {
-        console.log(props.parentCallback(4))
+       props.parentCallback(4)
 
     }
     return(
