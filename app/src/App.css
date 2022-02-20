@@ -1,0 +1,10 @@
+@import '~antd/dist/antd.css';
+.parent {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+}
